@@ -31,5 +31,11 @@ Installation of Kubectl and Minikube for Kubernetes practice on Windows
 Commands i came across
 ===============================
 
-1. kubectl get nodes
-2. kubectl get pods
+1. kubectl get nodes => used to list the nodes
+2. kubectl get pods => used to list the pods
+3. Kubectl create -f <yaml file_name> => used for creating pods
+4. kubectl get pods -o wide => which is used for getting full information of pods
+5. kubectl delete pod <pod_name> => used for deleting pod
+6. kubectl logs <pod_name> => used to get logs of the pod
+7. Kubectl describe pod <pod_name> => used to get full details about pod (we can use this command to debug a pod so that we get information like status of pod , if any error in the pod etc)
+
