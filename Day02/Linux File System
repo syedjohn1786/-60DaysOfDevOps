@@ -1,0 +1,17 @@
+Linux File System
+=======================================
+The Linux file system is the structure used to organize and manage files on Linux and Unix-like operating systems.
+
+Root Directory (/): Root is the top-level directory in Linux denoted by /. All other files and directories are organized below root directory.
+Root directory have below sub-directories :
+bin, lib, etc, tmp, usr, home, var
+
+bin : bin Contains all binary executable files ( ex : .exe files)
+lib : contains all library files  (ex : .lib files)
+etc : Contains all system configuration files and the files which maintain information about users and groups.
+tmp : temporary files are stored. System or users create temporary files which will be removed when the server reboots. 
+home : Contains user home directories. Each user typically has their own subdirectory within /home.
+usr : Default directory provided by Unix OS to create users home directories and containsmanual pages - also contains executable commands
+var : var Contains all system log files and message files. 
+
+
