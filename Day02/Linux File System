@@ -14,4 +14,24 @@ home : Contains user home directories. Each user typically has their own subdire
 usr : Default directory provided by Unix OS to create users home directories and containsmanual pages - also contains executable commands
 var : var Contains all system log files and message files. 
 
+=========================================================================================================================================================
+
+more => t allows users to view the contents of a text file one screen at a time. 
+It's particularly useful for reading large files without overwhelming the terminal screen.
+
+Ex: more hello.txt
+
+more -n hello.txt => You can display line numbers along with the file contents by using the -n option:
+
+more -p 20 hello.txt bye.txt => View Two Files At The 20th Line Using more -p 
+
+=============================================================================================================
+
+cp : copies files from source to destination (cp file1 file2)
+
+consider you have a folder name Marriage. You have files such as lunch.txt, dinner.txt, party.txt, and many more files 
+now you need to copy all the files into marriage folder. How will you do ?
+
+cp file* Marriage => by using this command
+
 
