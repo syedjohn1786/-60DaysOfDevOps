@@ -34,6 +34,12 @@ now you need to copy all the files into marriage folder. How will you do ?
 
 cp file* Marriage => by using this command
 
+how to copy file from local windows machine to cloud based linuc machine
+Ans: To copy a file from a local Windows machine to a cloud-based Linux machine, you typically use a file transfer protocol such as SCP (Secure Copy Protocol) or SFTP (SSH File Transfer Protocol). 
+Here's how you can do it using SCP:
+Command : scp <source_file> <username>@<hostname_or_IP>:<destination_path>
+Ex: scp C:\path\to\file.txt username@hostname:/home/username/
+
 ==================================================================================================================
 Write a shell script for sending mail to concerned person if the users logged onto the system are greater than 5
 
