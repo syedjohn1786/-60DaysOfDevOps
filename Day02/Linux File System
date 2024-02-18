@@ -34,4 +34,21 @@ now you need to copy all the files into marriage folder. How will you do ?
 
 cp file* Marriage => by using this command
 
+==================================================================================================================
+Write a shell script for sending mail to concerned person if the users logged onto the system are greater than 5
 
+who | wc -l
+
+The above command  is used to count the number of users currently logged into the system. 
+
+#!/bin/bash
+no_of_users_logged_in=`who | wc -l`
+if [ ${no_of_users_logged_in} -gt 5 ]; then
+ subject='High System Load'
+ who > /tmp/list_of_users.txt
+ mail -s ${subject} stuser20@sql.example.com </tmp/list_of_users.txt
+fi
+rm -f /tmp/list_of_users.txt
+
+Note : here the option -s in mail is subject
+=================================================================================================
