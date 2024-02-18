@@ -1,0 +1,38 @@
+1). Print a table 
+Ans: 
+echo "Hello World";
+num=10
+for i in $(seq 1 10); do
+    echo "$num * $i = $(( num*i ))"
+done
+============================================================
+2). Print whether a number even or odd
+Ans:
+echo "Hello World";
+read num
+if [ $((num%2)) -eq 0 ]; then
+echo "even number"
+else
+echo "odd number"
+fi
+==========================================================================
+3). Power of a number
+Ans:
+echo "Hello World";
+read num1
+read num2
+result=$((num1 ** num2))
+echo "result is : $result"
+===========================================================================
+4). Average of numbers
+Ans:
+
+echo "Hello World";
+sum=0
+count=0
+for i in $(seq 1 5); do
+((count++))
+((sum=sum+i))
+done
+echo "average is : $((sum/count))"
+=============================================================================
